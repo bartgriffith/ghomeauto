@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-content>
+    <h2>Kitchen</h2>
+
+    <section>
+      <mat-slide-toggle
+          [color]="'primary'"
+          [checked]="mainLightOn"
+          (change)="onMainLightToggle($event)">
+        Main Light
+      </mat-slide-toggle>
+    </section>
+    <section>
+      <mat-slide-toggle
+          [color]="'primary'"
+          [checked]="barLightOn"
+          (change)="onBarLightsToggle($event)">
+        Bar Lights
+      </mat-slide-toggle>
+      <div>
+          <mat-slider thumbLabel tickInterval="1" [color]="'primary'" [value]="barLightValue" (change)="onBarLightDimmer($event)"></mat-slider>
+      </div>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<iframe id="thermostatWindow" src="https://www.mytotalconnectcomfort.com/portal" width="1000px" height="1000px"></iframe>

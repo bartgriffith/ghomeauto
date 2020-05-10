@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { KitchenComponent } from './pages/kitchen/kitchen.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [{path: '', component: KitchenComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
